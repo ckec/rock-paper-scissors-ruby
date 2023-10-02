@@ -3,6 +3,6 @@
 # Contains logic for the Computer class
 class Computer
   def computer_pick
-    SIGNS.sample
+    Game.SIGNS.sample
   end
 end

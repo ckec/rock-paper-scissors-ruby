@@ -3,9 +3,8 @@
 require_relative 'human'
 require_relative 'computer'
 
-SIGNS = %w[rock paper scissors].freeze
-
 # Contains logic for the Game class
+
 class Game
   def initialize
     @computer = Computer.new
@@ -20,6 +19,10 @@ class Game
     rounds
     declare_winner
     again?
+  end
+
+  def self.SIGNS
+    %w[rock paper scissors].freeze
   end
 
   private

@@ -10,7 +10,7 @@ class Human
     loop do
       puts "\nChoose your sign: "
       pick = gets.chomp.downcase
-      return pick if SIGNS.include?(pick)
+      return pick if Game.SIGNS.include?(pick)
 
       puts "\nInvalid sign!"
     end
